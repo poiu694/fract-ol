@@ -1,18 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   fract_ol.c                                         :+:      :+:    :+:   */
+/*   handle_error.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sangmlee <sangmlee@student.42seoul.kr>     +#+  +:+       +#+        */
+/*   By: sangmlee <sangmlee@42student.42seoul.kr>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/27 16:34:25 by sangmlee          #+#    #+#             */
-/*   Updated: 2022/05/27 16:53:52 by sangmlee         ###   ########.fr       */
+/*   Created: 2022/07/02 16:55:40 by sangmlee          #+#    #+#             */
+/*   Updated: 2022/07/02 19:09:56 by sangmlee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "fract_ol.h"
+#include "../include/so_long.h"
 
-int	main(int argc, char **argv)
+void	exit_error(const char *msg, int code)
 {
-	printf("HI\n");	
+	perror(msg);
+	exit(code);
 }
